@@ -112,7 +112,8 @@ function Font(options) {
  * @return {Boolean}
  */
 Font.prototype.hasChar = function(c) {
-    return this.encoding.charToGlyphIndex(c) !== null;
+    // return this.encoding.charToGlyphIndex(c) !== null;
+    return this.encoding.charToGlyphIndex(c) !== 0; // 완벽하지 않음.
 };
 
 /**
